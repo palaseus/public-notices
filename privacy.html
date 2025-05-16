@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About the Author | Public Record Docket</title>
+  <style>
+    body {
+      font-family: 'Lora', serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #e4e9ee 100%);
+      color: #2d2d2d;
+      margin: 0;
+      padding: 0.5rem 1rem;
+      line-height: 1.7;
+      overflow-x: hidden;
+      position: relative;
+      box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.08);
+    }
+    header {
+      position: sticky;
+      top: 0;
+      background: linear-gradient(180deg, #f5f7fa 0%, #ebedf0 100%);
+      padding: 0.8rem 1.5rem;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 8px 24px rgba(0, 0, 0, 0.06);
+      text-align: center;
+      border-bottom: 1px solid #d4a373;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      right: 0;
+      height: 10px;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), transparent);
+      z-index: -1;
+    }
+    nav {
+      margin-top: 1rem;
+      background: linear-gradient(180deg, #f0f4f8 0%, #ebedf0 100%);
+      padding: 0.6rem 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    nav a {
+      font-family: 'Cinzel', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: #2a5d87;
+      text-decoration: none;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+    nav a::before {
+      content: 'ᛞ ';
+      font-size: 0.8rem;
+      color: #d4a373;
+      opacity: 0;
+      position: absolute;
+      left: -1.2rem;
+      transition: opacity 0.3s ease;
+    }
+    nav a:hover {
+      color: #d4a373;
+    }
+    nav a:hover::before {
+      opacity: 1;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -2px;
+      left: 0;
+      background-color: #d4a373;
+      transition: width 0.3s ease;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+    footer {
+      background: linear-gradient(180deg, #1a3c5e 0%, #2a5d87 100%);
+      color: #ebedf0;
+      padding: 0.3rem 1rem;
+      margin-top: 2rem;
+      border-top: 2px solid #d4a373;
+      position: relative;
+      text-align: center;
+      font-size: 0.75rem;
+    }
+    footer::before {
+      content: 'ᛞ';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2rem;
+      color: #d4a373;
+      opacity: 0.1;
+    }
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.1rem;
+    }
+    .footer-links a {
+      color: #ebedf0;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      position: relative;
+    }
+    .footer-links a:hover {
+      color: #d4a373;
+    }
+    .footer-links a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -2px;
+      left: 0;
+      background-color: #d4a373;
+      transition: width 0.3s ease;
+    }
+    .footer-links a:hover::after {
+      width: 100%;
+    }
+    .footer-bottom {
+      font-size: 0.7rem;
+      color: #ebedf0;
+      font-style: italic;
+    }
+    .footer-bottom p {
+      margin: 0.1rem 0;
+    }
+    h1, h2 {
+      font-family: 'Cinzel', serif;
+      margin: 0.2rem 0;
+      color: #1a3c5e;
+      position: relative;
+      display: inline-block;
+    }
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+    }
+    h1::after, h2::after {
+      content: 'ᛞ ᛞ';
+      font-size: 0.8rem;
+      color: #d4a373;
+      position: absolute;
+      bottom: -0.4rem;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0.7;
+    }
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #2a5d87;
+    }
+    h3 {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #5a7a9a;
+      font-style: italic;
+      margin: 0.2rem 0;
+    }
+    .title-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .notice {
+      font-size: 0.8rem;
+      color: #5a7a9a;
+      background: #f0f4f8;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      font-style: italic;
+    }
+    h1:hover, h2:hover {
+      color: #d4a373;
+    }
+    h1:hover::after, h2:hover::after {
+      opacity: 1;
+    }
+    section {
+      background: #ffffff url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" opacity="0.1"><path d="M50 10 L90 70 L10 70 Z" stroke="%23d4a373" fill="none"/><path d="M50 20 L80 60 L20 60 Z" stroke="%23d4a373" fill="none"/><path d="M50 30 L70 50 L30 50 Z" stroke="%23d4a373" fill="none"/></svg>') repeat;
+      border: 1px solid #e0e4e9;
+      margin: 1.5rem auto;
+      padding: 1.2rem;
+      border-radius: 8px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12), 0 12px 32px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      max-width: 900px;
+    }
+    section::before {
+      content: 'ᛞ';
+      display: block;
+      text-align: center;
+      font-size: 1.2rem;
+      color: #d4a373;
+      margin-bottom: 0.5rem;
+    }
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16), 0 16px 40px rgba(0, 0, 0, 0.1);
+    }
+    p {
+      font-size: 0.95rem;
+      margin: 0.5rem 0;
+    }
+    .symbol {
+      color: #d4a373;
+      font-size: 1.2em;
+      margin-right: 0.5rem;
+    }
+    em {
+      font-style: italic;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 1.5rem;
+      margin: 0.5rem 0;
+    }
+    li {
+      font-size: 0.95rem;
+      margin: 0.3rem 0;
+      position: relative;
+    }
+    li::before {
+      content: '–';
+      position: absolute;
+      left: -1.5rem;
+      color: #d4a373;
+    }
+    a {
+      color: #2a5d87;
+      text-decoration: none;
+      font-weight: 600;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+    a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -2px;
+      left: 0;
+      background-color: #d4a373;
+      transition: width 0.3s ease;
+    }
+    a:hover {
+      color: #d4a373;
+    }
+    a:hover::after {
+      width: 100%;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+      }
+      h3 {
+        font-size: 0.9rem;
+      }
+      .notice {
+        font-size: 0.7rem;
+      }
+      section {
+        padding: 1rem;
+        margin: 0.8rem;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+      nav {
+        flex-direction: column;
+        gap: 0.8rem;
+        padding: 0.6rem 1rem;
+      }
+      nav a {
+        font-size: 0.9rem;
+        letter-spacing: 0.06em;
+        font-weight: 700;
+      }
+      nav a::before {
+        font-size: 0.7rem;
+      }
+      .footer-links {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      footer {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.7rem;
+      }
+      .footer-bottom {
+        font-size: 0.65rem;
+      }
+    }
+    @media print {
+      body {
+        background: white;
+        color: black;
+        padding: 1rem;
+        box-shadow: none;
+      }
+      header {
+        position: static;
+        box-shadow: none;
+        border-bottom: 1px solid #000;
+        background: white;
+      }
+      nav, footer, section::before {
+        display: none;
+      }
+      section {
+        box-shadow: none;
+        border: 1px solid #000;
+        background: white;
+      }
+      a {
+        color: #000;
+        text-decoration: underline;
+      }
+      a::after {
+        content: " (" attr(href) ")";
+        color: #000;
+        font-size: 0.9rem;
+      }
+      h1::after, h2::after {
+        display: none;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:wght@400;700&family=Source+Code+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Public Record Docket</h1>
+    <h2>Kevin Brady McLean</h2>
+    <div class="title-container">
+      <h3>Private Secured Party Creditor</h3>
+      <span class="notice">Last Updated: May 16, 2025</span>
+    </div>
+  </header>
+
+  <nav>
+    <a href="./index.html">Docket Home</a>
+    <a href="./declaration.html">Declaration of Status</a>
+    <a href="./honor.html">Code of Honor</a>
+    <a href="./about.html">About the Author</a>
+    <a href="./intent.html">Purpose & Intent</a>
+  </nav>
+
+<!-- Privacy Policy -->
+<div class="privacy-policy">
+  <h1>Privacy Policy</h1>
+  <p><strong>Effective Date:</strong> May 16, 2025</p>
+  <p><strong>Site:</strong> <a href="https://palaseus.github.io/public-notices/index.html">https://palaseus.github.io/public-notices/index.html</a></p>
+
+  <h2>I. Preface</h2>
+  <p>This Privacy Policy is a declaration of our absolute commitment to privacy, user dignity, and informational non-interference. It applies solely to the aforementioned site (“Site”), hosted via GitHub Pages under the stewardship of its creator. The creator and maintainer of this Site do not operate under the pretense of surveillance capitalism, targeted advertising, or any form of user manipulation or profiling. This document serves as an express repudiation of the normalization of digital tracking and commodified attention.</p>
+
+  <h2>II. Data Collection: None</h2>
+  <p>We collect absolutely <strong>no personally identifiable information</strong> (PII) from visitors. This Site does <strong>not request</strong>, <strong>log</strong>, <strong>store</strong>, <strong>transmit</strong>, or otherwise process:</p>
+  <ul>
+    <li>Names</li>
+    <li>Email addresses</li>
+    <li>IP addresses</li>
+    <li>MAC addresses</li>
+    <li>Device IDs</li>
+    <li>Geographic locations</li>
+    <li>Biometric or behavioral data</li>
+    <li>Search history</li>
+    <li>Form submissions (there are none)</li>
+    <li>Session data</li>
+    <li>Referrer or browser metadata</li>
+  </ul>
+  <p>Furthermore, there are:</p>
+  <ul>
+    <li><strong>No sign-ups</strong></li>
+    <li><strong>No user accounts</strong></li>
+    <li><strong>No analytics</strong></li>
+    <li><strong>No tracking scripts</strong></li>
+    <li><strong>No hidden beacons</strong></li>
+    <li><strong>No third-party embeds</strong></li>
+    <li><strong>No social media pixels or plugins</strong></li>
+    <li><strong>No cookies of any kind — neither first-party nor third-party</strong></li>
+  </ul>
+
+  <h2>III. JavaScript-Free Environment</h2>
+  <p>This Site does <strong>not use or rely upon JavaScript</strong>. Every page is rendered in static HTML/CSS only. There are no active or passive client-side scripts executing during or after page load. This guarantees that:</p>
+  <ul>
+    <li>Nothing runs in your browser</li>
+    <li>No telemetry or interaction data is captured</li>
+    <li>You are not profiled, fingerprinted, or exposed</li>
+  </ul>
+  <p>Your web browser interacts solely with the static files served directly by GitHub’s content delivery network (CDN).</p>
+
+  <h2>IV. Hosting Infrastructure</h2>
+  <p>This Site is hosted on GitHub Pages, a free and static hosting service provided by GitHub, Inc., a subsidiary of Microsoft Corporation. While GitHub may maintain standard access logs for security and operational purposes (such as IP addresses for traffic routing), such logs are not accessible to or used by this Site's creator. We do not receive, store, or analyze this data. We neither control nor exploit GitHub's back-end infrastructure.</p>
+  <p>You are encouraged to review <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank">GitHub’s privacy policy</a> if you wish to understand how GitHub, as a platform provider, handles incidental traffic data.</p>
+
+  <h2>V. External Links and Third-Party Sites</h2>
+  <p>This Site may contain hyperlinks to other websites for reference or citation. Clicking such links may direct you away from our domain. We do not endorse or assume responsibility for the privacy policies or content of any third-party websites. Once you leave our domain, you are subject to the terms and practices of the destination site, over which we exert no control.</p>
+  <p>We recommend reviewing the privacy policies of any external websites you visit, particularly if those sites require interaction, cookies, or data submission.</p>
+
+  <h2>VI. No Consent Required, No Consent Taken</h2>
+  <p>Unlike most websites, we do <strong>not ask for cookie consent</strong> because <strong>no cookies are in use</strong>. We do <strong>not ask for consent to collect data</strong> because <strong>no data is collected</strong>. Consent is not sought because intrusion is absent. This is a pure, non-interactive environment where you are a sovereign visitor — not a user to be mined.</p>
+
+  <h2>VII. Children’s Privacy</h2>
+  <p>We do not knowingly collect data from children or adults. This Site is informational in nature and designed for general public use. It contains no forms, no subscriptions, and no account features. There is nothing to opt into, nothing to sign, nothing to disclose.</p>
+
+  <h2>VIII. Changes to This Policy</h2>
+  <p>Since no data collection or tracking occurs, changes to this Privacy Policy are rare. However, if we ever amend the Site to include interactive components or data processing features (which is not currently intended), this Privacy Policy will be updated accordingly and posted prominently on the home page.</p>
+  <p>Changes, if any, will never be retroactive. Users will always retain the right to access the site without data collection or profiling.</p>
+
+  <h2>IX. Contact</h2>
+  <p>If you have questions, concerns, or feedback about this Privacy Policy, or wish to understand its intent or implications, you may contact the site maintainer directly via any channel publicly listed (if any). However, note that this site does not solicit or expect correspondence.</p>
+
+  <h2>X. Final Declaration</h2>
+  <p>This Privacy Policy is intentionally radical in its simplicity. It represents a philosophical and ethical stance against the mass commodification of human attention and the exploitation of personal data. You are free to read, study, and use the contents of this Site without fear of being watched, logged, or judged.</p>
+  <p>We view privacy not as a policy requirement, but as a moral right.</p>
+  <p><strong>This Site collects nothing. This Site stores nothing. This Site knows nothing about you. And that is exactly the point.</strong></p>
+</div>
+
+  <footer>
+    <div class="footer-links">
+      <a href="./privacy.html">Privacy Policy</a>
+      <a href="./terms.html">Terms of Service</a>
+      <a href="./accessibility.html">Accessibility Statement</a>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Kevin Brady McLean. All rights reserved.</p>
+      <p>This site supports lawful notice and recordkeeping under full commercial liability.</p>
+    </div>
+  </footer>
+</body>
+</html>
