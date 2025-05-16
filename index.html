@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Public Record Docket | Kevin Brady McLean</title>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Code+Pro&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Merriweather', serif;
@@ -15,7 +14,7 @@
       line-height: 1.9;
       overflow-x: hidden;
       position: relative;
-      box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.08);
+      box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.08); /* Page-wide background shadow */
     }
     header {
       position: sticky;
@@ -23,9 +22,19 @@
       background: #f5f7fa;
       padding: 1.5rem 2rem;
       z-index: 100;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 8px 24px rgba(0, 0, 0, 0.06); /* Enhanced 3D shadow */
       text-align: center;
       border-bottom: 2px solid #d4a373;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      right: 0;
+      height: 10px;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), transparent); /* 3D shading under header */
+      z-index: -1;
     }
     h1, h2, h3 {
       margin: 0.5rem 0;
@@ -35,6 +44,23 @@
       font-size: 2.8rem;
       font-weight: 700;
       letter-spacing: 0.05em;
+      position: relative;
+    }
+    h1::before {
+      content: 'ᛞ';
+      font-size: 1.2rem;
+      color: #d4a373;
+      position: absolute;
+      left: -1.5rem;
+      top: 0.5rem;
+    }
+    h1::after {
+      content: 'ᛞ';
+      font-size: 1.2rem;
+      color: #d4a373;
+      position: absolute;
+      right: -1.5rem;
+      top: 0.5rem;
     }
     h2 {
       font-size: 1.8rem;
@@ -48,18 +74,63 @@
       font-style: italic;
     }
     section {
-      background: #ffffff;
+      background: #ffffff url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" opacity="0.1"><path d="M50 10 L90 70 L10 70 Z" stroke="%23d4a373" fill="none"/><path d="M50 20 L80 60 L20 60 Z" stroke="%23d4a373" fill="none"/><path d="M50 30 L70 50 L30 50 Z" stroke="%23d4a373" fill="none"/></svg>') repeat;
       border: 1px solid #e0e4e9;
       margin: 2rem auto;
       padding: 2rem;
       border-radius: 12px;
       max-width: 900px;
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12), 0 12px 32px rgba(0, 0, 0, 0.08); /* Deeper 3D shadow */
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+    section::before {
+      content: 'ᛞ';
+      display: block;
+      text-align: center;
+      font-size: 1.5rem;
+      color: #d4a373;
+      margin-bottom: 1rem;
     }
     section:hover {
       transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16), 0 16px 40px rgba(0, 0, 0, 0.1);
+    }
+    details {
+      background: #ffffff;
+      border: 1px solid #e0e4e9;
+      margin: 2.5rem auto;
+      border-radius: 12px;
+      max-width: 900px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12), 0 12px 32px rgba(0, 0, 0, 0.08);
+      transition: box-shadow 0.3s ease;
+    }
+    details[open] {
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16), 0 16px 40px rgba(0, 0, 0, 0.1);
+    }
+    summary {
+      font-size: 1.9rem;
+      font-weight: 600;
+      color: #2a5d87;
+      padding: 1.5rem 2rem;
+      cursor: pointer;
+      border-bottom: 1px solid #e0e4e9;
+      outline: none;
+      transition: background 0.3s ease;
+    }
+    summary:hover {
+      background: #f0f4f8;
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    summary::before {
+      content: '▶ ';
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+    details[open] summary::before {
+      transform: rotate(90deg);
     }
     ul {
       list-style-type: none;
@@ -71,14 +142,35 @@
       background: #f9fafb;
       border-left: 5px solid #d4a373;
       border-radius: 8px;
+      transition: background 0.3s ease;
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06); /* Inner shadow for depth */
+    }
+    li:hover {
+      background: #f0f4f8;
+      box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.08);
     }
     a {
       color: #2a5d87;
       text-decoration: none;
       font-weight: 600;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+    a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -2px;
+      left: 0;
+      background-color: #d4a373;
+      transition: width 0.3s ease;
     }
     a:hover {
       color: #d4a373;
+    }
+    a:hover::after {
+      width: 100%;
     }
     code {
       font-family: 'Source Code Pro', monospace;
@@ -89,6 +181,26 @@
       background: #edf2f7;
       padding: 0.5rem;
       border-radius: 4px;
+    }
+    .timestamp-link {
+      font-size: 0.85rem;
+      color: #2a5d87;
+      margin-left: 0.5rem;
+    }
+    .timestamp-link::before {
+      content: '⏱ ';
+    }
+    .status-badge {
+      background: #d4a373;
+      color: white;
+      padding: 0.2em 0.6em;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      display: inline-block;
+      margin-left: 0.5rem;
+    }
+    .status-badge.closed {
+      background: #2a5d87;
     }
     .notice {
       text-align: center;
@@ -104,6 +216,21 @@
       margin-top: 1.5rem;
       font-style: italic;
     }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      summary {
+        font-size: 1.6rem;
+        padding: 1rem 1.5rem;
+      }
+      section {
+        padding: 1.5rem;
+      }
+    }
     @media print {
       body {
         background: white;
@@ -116,17 +243,34 @@
         box-shadow: none;
         border-bottom: 1px solid #000;
       }
-      section {
+      section, details {
         box-shadow: none;
         border: 1px solid #000;
         background: white;
+      }
+      section::before, summary::before, .notice {
+        display: none;
       }
       a {
         color: #000;
         text-decoration: underline;
       }
+      a::after {
+        content: " (" attr(href) ")";
+        color: #000;
+        font-size: 0.9rem;
+      }
+      .status-badge {
+        border: 1px solid #000;
+        color: #000;
+        background: #fff;
+      }
+      .timestamp-link::before {
+        content: none;
+      }
     }
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Code+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -136,45 +280,68 @@
     <p class="notice">Last Updated: May 16, 2025</p>
   </header>
 
-  <section>
-    <h2>Filed Record: UCC-1 Financing Statement</h2>
-    <p>
-      A Uniform Commercial Code Financing Statement (UCC-1) and related instruments were executed and entered into the public record by Kevin Brady McLean, a living man, acting under full private authority and commercial liability.
-    </p>
-    <ul>
-      <li>
-        <a href="./UCCSIGNEDPACKET_compressed.pdf" target="_blank">UCCSIGNEDPACKET_compressed.pdf</a>
-        <code>SHA256: d79d5efd13aaed4b2adcd211ae36759a209aeba9143716fc655c89fb5d72f22e</code>
-      </li>
-      <li>
-        <a href="./UCCSIGNEDPACKET.pdf.ots" target="_blank">UCCSIGNEDPACKET.pdf.ots</a>
-        <code>SHA256: 39cbd02988b311a6e0ed028ddc984937d5f245d3acbdfa7f6fddbabc1644ee68</code>
-      </li>
-      <li>
-        <a href="./UCC Packet.zip" target="_blank">UCC Packet.zip</a>
-        <code>SHA256: b5ada459236b502b1b4e0780c31f3b01a6216b038bbaaca4c893b4dbded70ba5</code>
-      </li>
-    </ul>
-    <div class="date-label">Filed: April 29, 2025</div>
-  </section>
+  <details>
+    <summary>UCC-1 Financing Records</summary>
+    <section>
+      <h2>Filed Record: UCC-1 Financing Statement</h2>
+      <p>
+        A Uniform Commercial Code Financing Statement (UCC-1) and related instruments were executed and entered into the public record by Kevin Brady McLean, a living man, acting under full private authority and commercial liability.
+      </p>
+      <ul>
+        <li>
+          <a href="./UCCSIGNEDPACKET_compressed.pdf" target="_blank">UCCSIGNEDPACKET_compressed.pdf</a>
+          <code>
+            SHA256: d79d5efd13aaed4b2adcd211ae36759a209aeba9143716fc655c89fb5d72f22e
+            <br>
+            <a href="https://opentimestamps.org/" target="_blank" class="timestamp-link">Verify Timestamp</a>
+          </code>
+        </li>
+        <li>
+          <a href="./UCCSIGNEDPACKET.pdf.ots" target="_blank">UCCSIGNEDPACKET.pdf.ots</a>
+          <code>
+            SHA256: 39cbd02988b311a6e0ed028ddc984937d5f245d3acbdfa7f6fddbabc1644ee68
+            <br>
+            <a href="https://opentimestamps.org/" target="_blank" class="timestamp-link">Verify Timestamp</a>
+          </code>
+        </li>
+        <li>
+          <a href="./UCC Packet.zip" target="_blank">UCC Packet.zip</a>
+          <code>
+            SHA256: b5ada459236b502b1b4e0780c31f3b01a6216b038bbaaca4c893b4dbded70ba5
+            <br>
+            <a href="https://opentimestamps.org/" target="_blank" class="timestamp-link">Verify Timestamp</a>
+          </code>
+        </li>
+      </ul>
+      <div class="date-label">Filed: April 29, 2025 <span class="status-badge">Filed</span></div>
+    </section>
 
-  <section>
-    <h2>Closed Record: Final Administrative Packet (FAP)</h2>
-    <p>
-      This packet finalizes and administratively closes all rebuttal windows. Its issuance constitutes permanent estoppel by acquiescence for all prior and associated filings.
-    </p>
-    <ul>
-      <li>
-        <a href="./Final_Administrative_Packet.pdf" target="_blank">Final_Administrative_Packet.pdf</a>
-        <code>SHA256: d79d5efd13aaed4b2adcd211ae36759a209aeba9143716fc655c89fb5d72f22e</code>
-      </li>
-      <li>
-        <a href="./FAP.pdf.ots" target="_blank">FAP.pdf.ots</a>
-        <code>OpenTimestamps Proof of Hash & Publication</code>
-      </li>
-    </ul>
-    <div class="date-label">Closed: May 16, 2025</div>
-  </section>
+    <section>
+      <h2>Closed Record: Final Administrative Packet (FAP)</h2>
+      <p>
+        This packet finalizes and administratively closes all rebuttal windows. Its issuance constitutes permanent estoppel by acquiescence for all prior and associated filings.
+      </p>
+      <ul>
+        <li>
+          <a href="./Final_Administrative_Packet.pdf" target="_blank">Final_Administrative_Packet.pdf</a>
+          <code>
+            SHA256: d79d5efd13aaed4b2adcd211ae36759a209aeba9143716fc655c89fb5d72f22e
+            <br>
+            <a href="https://opentimestamps.org/" target="_blank" class="timestamp-link">Verify Timestamp</a>
+          </code>
+        </li>
+        <li>
+          <a href="./FAP.pdf.ots" target="_blank">FAP.pdf.ots</a>
+          <code>
+            OpenTimestamps Proof of Hash & Publication
+            <br>
+            <a href="https://opentimestamps.org/" target="_blank" class="timestamp-link">Verify Timestamp</a>
+          </code>
+        </li>
+      </ul>
+      <div class="date-label">Closed: May 16, 2025 <span class="status-badge closed">Closed</span></div>
+    </section>
+  </details>
 
   <section>
     <h2>Future Recordations</h2>
