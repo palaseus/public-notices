@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Public Record Docket | Kevin Brady McLean</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Code+Pro&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Merriweather', serif;
@@ -13,9 +14,20 @@
       padding: 3rem 1rem;
       line-height: 1.9;
       overflow-x: hidden;
+      position: relative;
+      box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.08);
+    }
+    header {
+      position: sticky;
+      top: 0;
+      background: #f5f7fa;
+      padding: 1.5rem 2rem;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      border-bottom: 2px solid #d4a373;
     }
     h1, h2, h3 {
-      text-align: center;
       margin: 0.5rem 0;
       color: #1a3c5e;
     }
@@ -23,15 +35,11 @@
       font-size: 2.8rem;
       font-weight: 700;
       letter-spacing: 0.05em;
-      border-bottom: 2px solid #d4a373;
-      padding-bottom: 0.6rem;
-      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     }
     h2 {
       font-size: 1.8rem;
       font-weight: 600;
       color: #2a5d87;
-      margin-top: 2.5rem;
     }
     h3 {
       font-size: 1.3rem;
@@ -46,48 +54,12 @@
       padding: 2rem;
       border-radius: 12px;
       max-width: 900px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     section:hover {
       transform: translateY(-5px);
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
-    }
-    details {
-      background: #ffffff;
-      border: 1px solid #e0e4e9;
-      margin: 2.5rem auto;
-      border-radius: 12px;
-      max-width: 900px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-      transition: box-shadow 0.3s ease;
-    }
-    details[open] {
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
-    }
-    summary {
-      font-size: 1.9rem;
-      font-weight: 600;
-      color: #2a5d87;
-      padding: 1.5rem 2rem;
-      cursor: pointer;
-      border-bottom: 1px solid #e0e4e9;
-      outline: none;
-      transition: background 0.3s ease;
-    }
-    summary:hover {
-      background: #f0f4f8;
-    }
-    summary::-webkit-details-marker {
-      display: none;
-    }
-    summary::before {
-      content: '▶ ';
-      display: inline-block;
-      transition: transform 0.3s ease;
-    }
-    details[open] summary::before {
-      transform: rotate(90deg);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
     }
     ul {
       list-style-type: none;
@@ -99,33 +71,14 @@
       background: #f9fafb;
       border-left: 5px solid #d4a373;
       border-radius: 8px;
-      transition: background 0.3s ease;
-    }
-    li:hover {
-      background: #f0f4f8;
     }
     a {
       color: #2a5d87;
       text-decoration: none;
       font-weight: 600;
-      position: relative;
-      transition: color 0.3s ease;
-    }
-    a::after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 2px;
-      bottom: -2px;
-      left: 0;
-      background-color: #d4a373;
-      transition: width 0.3s ease;
     }
     a:hover {
       color: #d4a373;
-    }
-    a:hover::after {
-      width: 100%;
     }
     code {
       font-family: 'Source Code Pro', monospace;
@@ -151,72 +104,77 @@
       margin-top: 1.5rem;
       font-style: italic;
     }
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2.2rem;
+    @media print {
+      body {
+        background: white;
+        color: black;
+        padding: 1rem;
+        box-shadow: none;
       }
-      h2 {
-        font-size: 1.5rem;
-      }
-      summary {
-        font-size: 1.6rem;
-        padding: 1rem 1.5rem;
+      header {
+        position: static;
+        box-shadow: none;
+        border-bottom: 1px solid #000;
       }
       section {
-        padding: 1.5rem;
+        box-shadow: none;
+        border: 1px solid #000;
+        background: white;
+      }
+      a {
+        color: #000;
+        text-decoration: underline;
       }
     }
   </style>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Code+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Public Record Docket</h1>
-  <h2>Kevin Brady McLean</h2>
-  <h3>Private Secured Party Creditor</h3>
-  <p class="notice">Last Updated: May 16, 2025</p>
+  <header>
+    <h1>Public Record Docket</h1>
+    <h2>Kevin Brady McLean</h2>
+    <h3>Private Secured Party Creditor</h3>
+    <p class="notice">Last Updated: May 16, 2025</p>
+  </header>
 
-  <details>
-    <summary>UCC-1 Financing Records</summary>
-    <section>
-      <h2>Filed Record: UCC-1 Financing Statement</h2>
-      <p>
-        A Uniform Commercial Code Financing Statement (UCC-1) and related instruments were executed and entered into the public record by Kevin Brady McLean, a living man, acting under full private authority and commercial liability.
-      </p>
-      <ul>
-        <li>
-          <a href="./UCCSIGNEDPACKET_compressed.pdf" target="_blank">UCCSIGNEDPACKET_compressed.pdf</a>
-          <code>SHA256: d79d5efd13aaed4b2adcd211ae36759a209aeba9143716fc655c89fb5d72f22e</code>
-        </li>
-        <li>
-          <a href="./UCCSIGNEDPACKET.pdf.ots" target="_blank">UCCSIGNEDPACKET.pdf.ots</a>
-          <code>SHA256: 39cbd02988b311a6e0ed028ddc984937d5f245d3acbdfa7f6fddbabc1644ee68</code>
-        </li>
-        <li>
-          <a href="./UCC Packet.zip" target="_blank">UCC Packet.zip</a>
-          <code>SHA256: b5ada459236b502b1b4e0780c31f3b01a6216b038bbaaca4c893b4dbded70ba5</code>
-        </li>
-      </ul>
-      <div class="date-label">Filed: April 29, 2025</div>
-    </section>
+  <section>
+    <h2>Filed Record: UCC-1 Financing Statement</h2>
+    <p>
+      A Uniform Commercial Code Financing Statement (UCC-1) and related instruments were executed and entered into the public record by Kevin Brady McLean, a living man, acting under full private authority and commercial liability.
+    </p>
+    <ul>
+      <li>
+        <a href="./UCCSIGNEDPACKET_compressed.pdf" target="_blank">UCCSIGNEDPACKET_compressed.pdf</a>
+        <code>SHA256: d79d5efd13aaed4b2adcd211ae36759a209aeba9143716fc655c89fb5d72f22e</code>
+      </li>
+      <li>
+        <a href="./UCCSIGNEDPACKET.pdf.ots" target="_blank">UCCSIGNEDPACKET.pdf.ots</a>
+        <code>SHA256: 39cbd02988b311a6e0ed028ddc984937d5f245d3acbdfa7f6fddbabc1644ee68</code>
+      </li>
+      <li>
+        <a href="./UCC Packet.zip" target="_blank">UCC Packet.zip</a>
+        <code>SHA256: b5ada459236b502b1b4e0780c31f3b01a6216b038bbaaca4c893b4dbded70ba5</code>
+      </li>
+    </ul>
+    <div class="date-label">Filed: April 29, 2025</div>
+  </section>
 
-    <section>
-      <h2>Closed Record: Final Administrative Packet (FAP)</h2>
-      <p>
-        This packet finalizes and administratively closes all rebuttal windows. Its issuance constitutes permanent estoppel by acquiescence for all prior and associated filings.
-      </p>
-      <ul>
-        <li>
-          <a href="./Final_Administrative_Packet.pdf" target="_blank">Final_Administrative_Packet.pdf</a>
-          <code>SHA256: d79d5efd13aaed4b2adcd211ae36759a209aeba9143716fc655c89fb5d72f22e</code>
-        </li>
-        <li>
-          <a href="./FAP.pdf.ots" target="_blank">FAP.pdf.ots</a>
-          <code>OpenTimestamps Proof of Hash & Publication</code>
-        </li>
-      </ul>
-      <div class="date-label">Closed: May 16, 2025</div>
-    </section>
-  </details>
+  <section>
+    <h2>Closed Record: Final Administrative Packet (FAP)</h2>
+    <p>
+      This packet finalizes and administratively closes all rebuttal windows. Its issuance constitutes permanent estoppel by acquiescence for all prior and associated filings.
+    </p>
+    <ul>
+      <li>
+        <a href="./Final_Administrative_Packet.pdf" target="_blank">Final_Administrative_Packet.pdf</a>
+        <code>SHA256: d79d5efd13aaed4b2adcd211ae36759a209aeba9143716fc655c89fb5d72f22e</code>
+      </li>
+      <li>
+        <a href="./FAP.pdf.ots" target="_blank">FAP.pdf.ots</a>
+        <code>OpenTimestamps Proof of Hash & Publication</code>
+      </li>
+    </ul>
+    <div class="date-label">Closed: May 16, 2025</div>
+  </section>
 
   <section>
     <h2>Future Recordations</h2>
