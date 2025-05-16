@@ -6,25 +6,25 @@
   <title>Public Record Docket | Kevin Brady McLean</title>
   <style>
     body {
-      font-family: 'Merriweather', serif;
+      font-family: 'Lora', serif;
       background: linear-gradient(135deg, #f5f7fa 0%, #e4e9ee 100%);
       color: #2d2d2d;
       margin: 0;
-      padding: 3rem 1rem;
-      line-height: 1.9;
+      padding: 2rem 1rem;
+      line-height: 1.7;
       overflow-x: hidden;
       position: relative;
-      box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.08); /* Page-wide background shadow */
+      box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.08);
     }
     header {
       position: sticky;
       top: 0;
-      background: #f5f7fa;
-      padding: 1.5rem 2rem;
+      background: linear-gradient(180deg, #f5f7fa 0%, #ebedf0 100%);
+      padding: 0.8rem 1.5rem;
       z-index: 100;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 8px 24px rgba(0, 0, 0, 0.06); /* Enhanced 3D shadow */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 8px 24px rgba(0, 0, 0, 0.06);
       text-align: center;
-      border-bottom: 2px solid #d4a373;
+      border-bottom: 1px solid #d4a373;
     }
     header::after {
       content: '';
@@ -33,73 +33,68 @@
       left: 0;
       right: 0;
       height: 10px;
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), transparent); /* 3D shading under header */
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), transparent);
       z-index: -1;
     }
-    h1, h2, h3 {
-      margin: 0.5rem 0;
+    h1, h2 {
+      font-family: 'Cinzel', serif;
+      margin: 0.2rem 0;
       color: #1a3c5e;
+      position: relative;
+      display: inline-block;
     }
     h1 {
-      font-size: 2.8rem;
+      font-size: 2.2rem;
       font-weight: 700;
-      letter-spacing: 0.05em;
-      position: relative;
+      letter-spacing: 0.06em;
     }
-    h1::before {
-      content: 'ᛞ';
-      font-size: 1.2rem;
+    h1::after, h2::after {
+      content: 'ᛞ ᛞ';
+      font-size: 0.8rem;
       color: #d4a373;
       position: absolute;
-      left: -1.5rem;
-      top: 0.5rem;
-    }
-    h1::after {
-      content: 'ᛞ';
-      font-size: 1.2rem;
-      color: #d4a373;
-      position: absolute;
-      right: -1.5rem;
-      top: 0.5rem;
+      bottom: -0.4rem;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0.7;
     }
     h2 {
-      font-size: 1.8rem;
+      font-size: 1.4rem;
       font-weight: 600;
       color: #2a5d87;
     }
     h3 {
-      font-size: 1.3rem;
+      font-size: 1rem;
       font-weight: 400;
       color: #5a7a9a;
       font-style: italic;
+      margin: 0.2rem 0;
     }
-    section {
-      background: #ffffff url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" opacity="0.1"><path d="M50 10 L90 70 L10 70 Z" stroke="%23d4a373" fill="none"/><path d="M50 20 L80 60 L20 60 Z" stroke="%23d4a373" fill="none"/><path d="M50 30 L70 50 L30 50 Z" stroke="%23d4a373" fill="none"/></svg>') repeat;
-      border: 1px solid #e0e4e9;
-      margin: 2rem auto;
-      padding: 2rem;
-      border-radius: 12px;
-      max-width: 900px;
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12), 0 12px 32px rgba(0, 0, 0, 0.08); /* Deeper 3D shadow */
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      position: relative;
+    .title-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
     }
-    section::before {
-      content: 'ᛞ';
-      display: block;
-      text-align: center;
-      font-size: 1.5rem;
+    .notice {
+      font-size: 0.8rem;
+      color: #5a7a9a;
+      background: #f0f4f8;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      font-style: italic;
+    }
+    h1:hover, h2:hover {
       color: #d4a373;
-      margin-bottom: 1rem;
     }
-    section:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16), 0 16px 40px rgba(0, 0, 0, 0.1);
+    h1:hover::after, h2:hover::after {
+      opacity: 1;
     }
     details {
       background: #ffffff;
       border: 1px solid #e0e4e9;
-      margin: 2.5rem auto;
+      margin: 1.5rem auto;
       border-radius: 12px;
       max-width: 900px;
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12), 0 12px 32px rgba(0, 0, 0, 0.08);
@@ -108,11 +103,19 @@
     details[open] {
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16), 0 16px 40px rgba(0, 0, 0, 0.1);
     }
+    details.ucc-tab {
+      border-left: 4px solid #d4a373;
+    }
+    details.future-tab {
+      border-left: 4px solid #c0c7d0;
+      background: #fafbfc;
+    }
     summary {
-      font-size: 1.9rem;
+      font-family: 'Cinzel', serif;
+      font-size: 1.4rem;
       font-weight: 600;
       color: #2a5d87;
-      padding: 1.5rem 2rem;
+      padding: 0.8rem 1.5rem;
       cursor: pointer;
       border-bottom: 1px solid #e0e4e9;
       outline: none;
@@ -129,21 +132,70 @@
       display: inline-block;
       transition: transform 0.3s ease;
     }
+    details.ucc-tab summary::before {
+      content: 'ᛞ ';
+      font-size: 1.4rem; /* Match summary text size */
+      color: #d4a373;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    }
+    details.future-tab summary::before {
+      content: '⌛ ';
+      font-size: 0.8rem;
+      color: #d4a373;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+      display: inline-block;
+      vertical-align: middle;
+      transition: transform 0.3s ease;
+    }
+    details.future-tab.flipped summary::before {
+      transform: rotate(180deg); /* Clockwise 180° when flipped */
+    }
     details[open] summary::before {
       transform: rotate(90deg);
+    }
+    details[open].future-tab summary::before {
+      transform: rotate(90deg); /* Fallback for non-JS browsers */
+    }
+    section {
+      background: #ffffff url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" opacity="0.1"><path d="M50 10 L90 70 L10 70 Z" stroke="%23d4a373" fill="none"/><path d="M50 20 L80 60 L20 60 Z" stroke="%23d4a373" fill="none"/><path d="M50 30 L70 50 L30 50 Z" stroke="%23d4a373" fill="none"/></svg>') repeat;
+      border: 1px solid #e0e4e9;
+      margin: 1rem;
+      padding: 1.2rem;
+      border-radius: 8px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12), 0 12px 32px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+    section::before {
+      content: 'ᛞ';
+      display: block;
+      text-align: center;
+      font-size: 1.2rem;
+      color: #d4a373;
+      margin-bottom: 0.5rem;
+    }
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16), 0 16px 40px rgba(0, 0, 0, 0.1);
+    }
+    p {
+      font-size: 0.95rem;
+      margin: 0.5rem 0;
     }
     ul {
       list-style-type: none;
       padding-left: 0;
+      margin: 0.5rem 0;
     }
     li {
-      margin: 1.2rem 0;
-      padding: 1.2rem;
+      font-size: 0.9rem;
+      margin: 0.6rem 0;
+      padding: 0.8rem;
       background: #f9fafb;
-      border-left: 5px solid #d4a373;
-      border-radius: 8px;
+      border-left: 4px solid #d4a373;
+      border-radius: 6px;
       transition: background 0.3s ease;
-      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06); /* Inner shadow for depth */
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06);
     }
     li:hover {
       background: #f0f4f8;
@@ -174,16 +226,16 @@
     }
     code {
       font-family: 'Source Code Pro', monospace;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       color: #4a5568;
       display: block;
-      margin-top: 0.5rem;
+      margin-top: 0.4rem;
       background: #edf2f7;
-      padding: 0.5rem;
+      padding: 0.4rem;
       border-radius: 4px;
     }
     .timestamp-link {
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       color: #2a5d87;
       margin-left: 0.5rem;
     }
@@ -202,33 +254,50 @@
     .status-badge.closed {
       background: #2a5d87;
     }
-    .notice {
-      text-align: center;
-      font-size: 0.95rem;
-      color: #5a7a9a;
-      margin: 2.5rem 0;
-      font-style: italic;
-    }
     .date-label {
       text-align: center;
       color: #5a7a9a;
-      font-size: 1rem;
-      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      margin-top: 0.8rem;
+      font-style: italic;
+    }
+    .bottom-notice {
+      text-align: center;
+      font-size: 0.95rem;
+      color: #5a7a9a;
+      margin: 2rem 0;
       font-style: italic;
     }
     @media (max-width: 600px) {
       h1 {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
       }
       h2 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+      }
+      h3 {
+        font-size: 0.9rem;
+      }
+      .notice {
+        font-size: 0.7rem;
       }
       summary {
-        font-size: 1.6rem;
-        padding: 1rem 1.5rem;
+        font-size: 1.2rem;
+        padding: 0.6rem 1rem;
       }
       section {
-        padding: 1.5rem;
+        padding: 1rem;
+        margin: 0.8rem;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+      li {
+        font-size: 0.85rem;
+        padding: 0.6rem;
+      }
+      header {
+        padding: 0.6rem 1rem;
       }
     }
     @media print {
@@ -242,13 +311,14 @@
         position: static;
         box-shadow: none;
         border-bottom: 1px solid #000;
+        background: white;
       }
       section, details {
         box-shadow: none;
         border: 1px solid #000;
         background: white;
       }
-      section::before, summary::before, .notice {
+      section::before, summary::before, .bottom-notice {
         display: none;
       }
       a {
@@ -268,19 +338,24 @@
       .timestamp-link::before {
         content: none;
       }
+      h1::after, h2::after {
+        display: none;
+      }
     }
   </style>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:wght@400;700&family=Source+Code+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <h1>Public Record Docket</h1>
     <h2>Kevin Brady McLean</h2>
-    <h3>Private Secured Party Creditor</h3>
-    <p class="notice">Last Updated: May 16, 2025</p>
+    <div class="title-container">
+      <h3>Private Secured Party Creditor</h3>
+      <span class="notice">Last Updated: May 16, 2025</span>
+    </div>
   </header>
 
-  <details>
+  <details class="ucc-tab">
     <summary>UCC-1 Financing Records</summary>
     <section>
       <h2>Filed Record: UCC-1 Financing Statement</h2>
@@ -343,18 +418,32 @@
     </section>
   </details>
 
-  <section>
-    <h2>Future Recordations</h2>
-    <p>
-      Additional declarations, affidavits, liens, or administrative notices will be added to this docket as received and processed.
-    </p>
-    <ul>
-      <li><em>No new filings on record at this time.</em></li>
-    </ul>
-  </section>
+  <details class="future-tab">
+    <summary>Future Recordations</summary>
+    <section>
+      <p>
+        Additional declarations, affidavits, liens, or administrative notices will be added to this docket as received and processed.
+      </p>
+      <ul>
+        <li><em>No new filings on record at this time.</em></li>
+      </ul>
+    </section>
+  </details>
 
-  <p class="notice">
+  <p class="bottom-notice">
     This docket is posted for lawful notice, evidentiary preservation, and recordkeeping. All documents are filed under full commercial liability. Rebuttal by silence, fraud, or proxy is permanently barred.
   </p>
+
+  <script>
+    // JavaScript to handle hourglass rotation direction
+    const futureTab = document.querySelector('details.future-tab');
+    futureTab.addEventListener('toggle', () => {
+      if (futureTab.open) {
+        futureTab.classList.add('flipped');
+      } else {
+        futureTab.classList.remove('flipped');
+      }
+    });
+  </script>
 </body>
 </html>
