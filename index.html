@@ -10,7 +10,7 @@
       background: linear-gradient(135deg, #f5f7fa 0%, #e4e9ee 100%);
       color: #2d2d2d;
       margin: 0;
-      padding: 0.5rem 1rem; /* Reduced top padding */
+      padding: 0.5rem 1rem;
       line-height: 1.7;
       overflow-x: hidden;
       position: relative;
@@ -39,7 +39,7 @@
     nav {
       margin-top: 1rem;
       background: linear-gradient(180deg, #f0f4f8 0%, #ebedf0 100%);
-      padding: 0.6rem 1.5rem; /* Tighter padding */
+      padding: 0.6rem 1.5rem;
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       display: flex;
@@ -52,9 +52,9 @@
     }
     nav a {
       font-family: 'Cinzel', serif;
-      font-size: 1rem; /* Smaller text */
-      font-weight: 700; /* Bolder for wider look */
-      letter-spacing: 0.08em; /* Wider spacing */
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
       color: #2a5d87;
       text-decoration: none;
       position: relative;
@@ -62,7 +62,7 @@
     }
     nav a::before {
       content: 'ᛞ ';
-      font-size: 0.8rem; /* Smaller Dagaz */
+      font-size: 0.8rem;
       color: #d4a373;
       opacity: 0;
       position: absolute;
@@ -212,13 +212,16 @@
     details[open] {
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16), 0 16px 40px rgba(0, 0, 0, 0.1);
     }
-    details.ucc-tab {
+    details.current-tab {
       border-left: 4px solid #d4a373;
     }
     details.future-tab {
       border-left: 4px solid #c0c7d0;
       background: #fafbfc;
       margin-bottom: 2.5rem;
+    }
+    details.closed-tab {
+      border-left: 4px solid #2a5d87;
     }
     summary {
       font-family: 'Cinzel', serif;
@@ -242,7 +245,7 @@
       display: inline-block;
       transition: transform 0.3s ease;
     }
-    details.ucc-tab summary::before {
+    details.current-tab summary::before {
       content: 'ᛞ ';
       font-size: 1.4rem;
       color: #d4a373;
@@ -256,6 +259,12 @@
       display: inline-block;
       vertical-align: middle;
       transition: transform 0.3s ease;
+    }
+    details.closed-tab summary::before {
+      content: '✓ ';
+      font-size: 1rem;
+      color: #2a5d87;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     }
     details.future-tab.flipped summary::before {
       transform: rotate(180deg);
@@ -415,7 +424,7 @@
         padding: 0.6rem 1rem;
       }
       nav a {
-        font-size: 0.9rem; /* Smaller on mobile */
+        font-size: 0.9rem;
         letter-spacing: 0.06em;
         font-weight: 700;
       }
@@ -502,8 +511,8 @@
   <p><center>Dedicated to lawful reclamation, principled stewardship, and the pursuit of legacy through truth.<br>
 This platform reflects an ongoing mission—rooted in conviction, guided by purpose, and committed to something greater than self.</center></p>
   
-  <details class="ucc-tab">
-    <summary>  UCC-1 Financing Records</summary>
+  <details class="current-tab">
+    <summary>Current Records</summary>
     <section>
       <h2>Filed Record: UCC-1 Financing Statement</h2>
       <p>
@@ -534,24 +543,18 @@ This platform reflects an ongoing mission—rooted in conviction, guided by purp
             <a href="https://opentimestamps.org/" target="_blank" class="timestamp-link">Verify Timestamp</a>
           </code>
         </li>
-      </ul>
-      <div class="date-label">Filed: April 29, 2025 <span class="status-badge">Filed</span></div>
-    </section>
         <li>
-          <a href="./UCC Packet.zip" target="_blank">LDMESTATE.pdf</a>
+          <a href="./LDMESTATE.pdf" target="_blank">LDMESTATE.pdf</a>
           <code>
             SHA256: 6f09500a88133796ed2b4e3043e281f633695d2992ec797c1c40ac3a2931c370
             <br>
             <a href="https://opentimestamps.org/" target="_blank" class="timestamp-link">Verify Timestamp</a>
           </code>
         </li>
-        </li>
-      </ul>
-      <div class="date-label">Filed: April 29, 2025 <span class="status-badge">Filed</span></div>
-    </section>
         <li>
-          <a href="./UCC Packet.zip" target="_blank">LDMESTATE.pdf.ots</a>
+          <a href="./LDMESTATE.pdf.ots" target="_blank">LDMESTATE.pdf.ots</a>
           <code>
+            OpenTimestamps Proof of Hash & Publication
             <br>
             <a href="https://opentimestamps.org/" target="_blank" class="timestamp-link">Verify Timestamp</a>
           </code>
@@ -559,6 +562,22 @@ This platform reflects an ongoing mission—rooted in conviction, guided by purp
       </ul>
       <div class="date-label">Filed: April 29, 2025 <span class="status-badge">Filed</span></div>
     </section>
+  </details>
+
+  <details class="future-tab">
+    <summary>Future Records</summary>
+    <section>
+      <p>
+        Additional declarations, affidavits, liens, or administrative notices will be added to this docket as received and processed.
+      </p>
+      <ul>
+        <li><em>No new filings on record at this time.</em></li>
+      </ul>
+    </section>
+  </details>
+
+  <details class="closed-tab">
+    <summary>Closed Records</summary>
     <section>
       <h2>Closed Record: Final Administrative Packet (FAP)</h2>
       <p>
@@ -601,19 +620,7 @@ This platform reflects an ongoing mission—rooted in conviction, guided by purp
       <div class="date-label">Closed: May 16, 2025 <span class="status-badge closed">Closed</span></div>
     </section>
   </details>
-
-  <details class="future-tab">
-    <summary>  Future Recordations</summary>
-    <section>
-      <p>
-        Additional declarations, affidavits, liens, or administrative notices will be added to this docket as received and processed.
-      </p>
-      <ul>
-        <li><em>No new filings on record at this time.</em></li>
-      </ul>
-    </section>
-  </details>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
   <p class="bottom-notice">
     This docket is posted for lawful notice, evidentiary preservation, and recordkeeping. All documents are filed under full commercial liability. Rebuttal by silence, fraud, or proxy is permanently barred.
   </p>
