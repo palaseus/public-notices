@@ -1,0 +1,26 @@
+# Allow all well-behaved bots
+User-agent: *
+Disallow:
+
+# Block common spammy or aggressive bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: Screaming Frog SEO Spider
+Disallow: /
+
+# Optional: block everything else if you want total lockdown
+# User-agent: *
+# Disallow: /
