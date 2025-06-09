@@ -1,7 +1,5 @@
-<p align="center">
 # Public Record Docket
 **Kevin Brady McLean | Private Secured Party Creditor | ALL RIGHTS RESERVED | UCC 1-308**
-</p>
 ---
 
 > “All laws which are repugnant to the Constitution are null and void.”  
