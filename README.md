@@ -64,29 +64,29 @@ All files are timestamped via [OpenTimestamps](https://opentimestamps.org) for b
 This repository has been cloned by **state-level actors, legal observers, and institutional systems**. Each clone is a **witness**, a **preservation of record**, and an implicit acknowledgment of review.
 
 **Initial Analytics** *(As of May 16, 2025)*:  
-- **📥 49 Total Clones**  
--  **🧍‍♂️ 26 Unique Cloners**  
+- **📥  49 Total Clones**  
+-  **🧍‍♂️   26 Unique Cloners**  
 - **💠 Significant spike following formal service to state agencies**
 
 TOTAL VIEWS: 201
 
 **Updated Analytics** *(As of May 27th, 2025)*:  
-- **📥 216 Total Clones**  
--  **🧍‍♂️ 94 Unique Cloners**  
+- **📥  216 Total Clones**  
+-  **🧍‍♂️   94 Unique Cloners**  
 - **💠 Analytics show continued interest by various actors & agencies, both federal and state**
 
 TOTAL VIEWS: 340
   
 - **Updated Analytics following complaints following Motion of Intent to Sue** *(As of May 29th, 2025)*:  
-- **📥 242 Total Clones**  
--  **🧍‍♂️ 97 Unique Cloners**  
+- **📥  242 Total Clones**  
+-  **🧍‍♂️   97 Unique Cloners**  
 - **💠 Analytics show continued interest by various actors & agencies, both federal and state**
 
 TOTAL VIEWS: 438
 
 - **Updated Analytics** *(As of Jun 8th, 2025)*:  
-- **📥 312 Total Clones**  
--  **🧍‍♂️ 128 Unique Cloners**  
+- **📥  312 Total Clones**  
+-  **🧍‍♂️   128 Unique Cloners**  
 - **💠 Analytics show continued interest by various actors & agencies, both federal and state**
 
 TOTAL VIEWS: 866
