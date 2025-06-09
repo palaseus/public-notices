@@ -126,3 +126,5 @@ Milton, Florida State
 This repository and its contents **do not constitute legal, financial, or personal advice**. Nothing herein should be relied upon as a substitute for consultation with a qualified attorney or professional advisor.
 
 Kevin Brady McLean assumes no responsibility or liability for any actions taken or not taken based on the information contained in this repository. Users are solely responsible for verifying the applicability and accuracy of any information for their specific circumstances.
+
+This repository exists solely for the lawful publication of public records, notices, and related legal documents in accordance with state and federal rights of notice and public access. This is a non-commercial, non-tracking, static archive intended for documentary and civic purposes. With that being said, Github's minimalist insight platform is used and tracked internally for proof of notice purposes.
