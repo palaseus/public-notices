@@ -84,6 +84,13 @@ TOTAL VIEWS: 340
 
 TOTAL VIEWS: 438
 
+- **Updated Analytics** *(As of Jun 8th, 2025)*:  
+- **📥 312 Total Clones**  
+- **🧍‍♂️ 128 Unique Cloners**  
+- **💠 Analytics show continued interest by various actors & agencies, both federal and state**
+
+TOTAL VIEWS: 866
+
 ---
 
 ## Legal Status
