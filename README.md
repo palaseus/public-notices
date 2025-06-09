@@ -1,4 +1,4 @@
-                          # Public Record Docket
+# Public Record Docket
 **Kevin Brady McLean | Private Secured Party Creditor | ALL RIGHTS RESERVED | UCC 1-308**
 ---
 
