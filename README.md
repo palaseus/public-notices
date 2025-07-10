@@ -28,9 +28,6 @@ These filings are not theoretical. They are active, timestamped, and lawful.
 - `FAP.pdf.ots`  
   Timestamped OpenTimestamps proof of closure and standing
 
-- `LDMESTATE.pdf`  
-  Probate Packet including all filings on public record at SRC as of May 19th, 2025
-
 - `FULLMOTIONTOCOMPEL_pdfA.pdf`  
   Motion to Compel Judicial Review And Acceptance of Pro Se Filing By Sole Interested Party issued via e-filing portal State of Florida May 27th, 2025
 
