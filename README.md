@@ -44,7 +44,6 @@ These filings are not theoretical. They are active, timestamped, and lawful.
 | `UCCSIGNEDPACKET.pdf.ots`          | `39cbd02988b311a6e0ed028ddc984937d5f245d3acbdfa7f6fddbabc1644ee68` |
 | `UCC Packet.zip`                   | `b5ada459236b502b1b4e0780c31f3b01a6216b038bbaaca4c893b4dbded70ba5` |
 | `Final_Administrative_Packet.pdf`  | `d79d5efd13aaed4b2adcd211ae36759a209aeba9143716fc655c89fb5d72f22e` |
-| `LDMESTATE.pdf`                    | `6f09500a88133796ed2b4e3043e281f633695d2992ec797c1c40ac3a2931c370` |
 | `FULLMOTIONTOCOMPEL_pdfA.pdf`      | `459427531D1425F28737FD897317BC1A6E13052BC8264C9D6E83C5989CBE1DE0` |
 | `NoticeofIntenttoSue_pdfA.pdf`     | `684fc9364d40eb6546de054f6eddc011045d8eea6b58dc72a67bac943c73b29c` |
 
