@@ -47,25 +47,27 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       display: flex;
       justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-      max-width: 900px;
+      gap: 0.5rem;
+      flex-wrap: nowrap;
+      max-width: 1400px;
       margin-left: auto;
       margin-right: auto;
+      overflow-x: auto;
     }
     nav a {
       font-family: 'Cinzel', serif;
-      font-size: 1rem;
+      font-size: 0.9rem;
       font-weight: 700;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.06em;
       color: #2a5d87;
       text-decoration: none;
       position: relative;
       transition: color 0.3s ease;
-      padding: 0.5rem;
+      padding: 0.5rem 1.5rem 0.5rem 1.2rem;
       min-height: 44px;
       display: flex;
       align-items: center;
+      margin: 0 0.3rem;
     }
     nav a::before {
       content: 'ᛞ ';
@@ -73,7 +75,7 @@
       color: #d4a373;
       opacity: 0;
       position: absolute;
-      left: -1.2rem;
+      left: -0.5rem;
       transition: opacity 0.3s ease;
     }
     nav a:hover {
@@ -161,7 +163,7 @@
       display: inline-block;
     }
     h1 {
-      font-size: 2rem;
+      font-size: 2.2rem;
       font-weight: 700;
       letter-spacing: 0.06em;
     }
@@ -176,12 +178,12 @@
       opacity: 0.7;
     }
     h2 {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       font-weight: 600;
       color: #2a5d87;
     }
     h3 {
-      font-size: 0.95rem;
+      font-size: 1rem;
       font-weight: 400;
       color: #5a7a9a;
       font-style: italic;
@@ -195,10 +197,10 @@
       flex-wrap: wrap;
     }
     .notice {
-      font-size: 0.75rem;
+      font-size: 0.8rem;
       color: #5a7a9a;
       background: #f0f4f8;
-      padding: 0.2rem 0.5rem;
+      padding: 0.2rem 0.6rem;
       border-radius: 4px;
       font-style: italic;
     }
@@ -447,23 +449,25 @@
       }
       nav {
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
         gap: 0.5rem;
         padding: 0.4rem 0.8rem;
         background: #f0f4f8;
         border: 1px solid #e0e4e9;
+        overflow-x: auto;
       }
       nav a {
         font-size: 0.85rem;
         letter-spacing: 0.05em;
         font-weight: 600;
-        padding: 0.4rem;
+        padding: 0.4rem 0.8rem;
         min-height: 44px;
+        margin: 0 0.3rem;
       }
       nav a::before {
         font-size: 0.65rem;
-        left: -1rem;
+        left: -1.2rem;
       }
       .footer-links {
         flex-direction: column;
@@ -543,10 +547,12 @@
   </header>
 
   <nav>
+    <a href="./index.html">Docket Home</a>
     <a href="./declaration.html">Declaration of Status</a>
     <a href="./honor.html">Code of Honor</a>
-    <a href="./about.html">About the Author</a>
     <a href="./intent.html">Purpose & Intent</a>
+    <a href="./about.html">About the Author</a>
+    <a href="./contact.html">Contact</a>
   </nav>
 
   <p><center>Dedicated to lawful reclamation, principled stewardship, and the pursuit of legacy through truth.<br>
