@@ -88,6 +88,8 @@ TOTAL VIEWS: 866
 
 **UPDATE: Approximate total repo views as of 08/27/2025 = 4200+**
 
+United States v. Prudden, 424 F.2d 1021 (1970); United States v. Tweel, 550 F.2d 297 (1977)
+
 ---
 
 ## Legal Status
