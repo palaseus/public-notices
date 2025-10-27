@@ -119,6 +119,8 @@ Private Secured Party Creditor
 Milton, Florida State  
 `All rights reserved, without prejudice`
 
+**Romans 8:31**
+
 ---
 
 ## Disclaimer
