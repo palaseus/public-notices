@@ -14,7 +14,7 @@ Around 24 hours later, Elon Musk changes his X handle to the exact same asset, $
 
 ![Exhibit](exhibit.jpeg)
 
-The pump? Sure. They happen all of the time. But the odds that this decision chain or sequence of events occuring does not point to probability, rather, it points closer to some sort of asymmetrical convergennce of intuition. How or what was tapped into that appears to be a pre-signal event "captured?"
+The pump? Sure. They happen all of the time. But the odds that this decision chain or sequence of events occuring does not point to probability, rather, it points closer to some sort of asymmetrical convergence of intuition. How or what was tapped into that appears to be a pre-signal event "captured?"
 
 This is not the first time this sort of "thing" has happened to me. I've experienced events that are black swan-adjacent. This time, though, it was apparent and undeiable enough to make me start questioning just about everything I've ever thought about my reality. Two monthhs later, I found myself publishing this website and the contents within. This was my best attempt at tapping into that same essence and this is where it has led. Maybe they aren't perfect. I hardly understand how I've even gotten myself here from there so I've detached myself from all outcomes. But I cannot pretend that this was not, in some way Divinely led, and Divinely timed and therefore much bigger than me.
 
