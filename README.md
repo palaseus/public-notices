@@ -131,5 +131,8 @@ Kevin Brady McLean assumes no responsibility or liability for any actions taken 
 
 This repository exists solely for the lawful publication of public records, notices, and related legal documents in accordance with state and federal rights of notice and public access. This is a non-commercial, non-tracking, static archive intended for documentary and civic purposes. With that being said, Github's minimalist insight platform is used and tracked internally for proof of notice purposes.
 
+---
+
 **SOL E8:Y3189:A67:S1:M4:D5**
+
 **283189-016705-078305**
