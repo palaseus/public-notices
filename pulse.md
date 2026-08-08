@@ -7,7 +7,11 @@ If anything ever happens to me, question:
 
 Christopher Huey, U.S. Army
 
+^^ This is the guy who showed up to my work when I was working at Target and told me how easy it would be to take my life, that I was never going to see my daughter again before speaking Arabic over me like he is some sort of wizard.
+
 Heather McDuffee Stanford
+
+Not even 30 days later ^^ This person accuses me of things I've never done and swore it. I wonder how Chris Huey knew in advance? Orchestration. 
 
 Kaitlan Rucker, the honey trap
 
