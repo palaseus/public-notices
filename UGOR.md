@@ -1,2 +1,0 @@
-$UGOR,
-BigBearAI Holdings Inc
