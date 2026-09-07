@@ -13,11 +13,14 @@ Heather McDuffee Stanford
 
 Not even 30 days later ^^ This person accuses me of things I've never done and swore it. I wonder how Chris Huey knew in advance? Orchestration. 
 
+This is the triangulator. The author of confusion. The "man-eater" who is really just a wounded child who never grew up. (Think Russell "Firefist" Collins.)
+
 Kaitlan Rucker, the honey trap
+The Kitchen Witch, worked at Pizza Hut with my ex and her ex husband. Not sure what this person was trying to do. Perhaps temperature check me. I don't know. She's hot so I let it play out because I had to see the circus and confuse the enemy, apparently.
 
 Ryan Headrick the guy who sent me pictures of himself with my daughter after perjury was committed against me in Family Court.
 
-Daniel Stanford
+Daniel Stanford, the ex husband. 
 
 
 These are the people involved with gangstalking me and targetting me. 
@@ -36,6 +39,14 @@ I know what the word Federal means in an ecclesiastical sense. In my eyes whoeve
 
 I have been working on typing out this entire story for my daughter. In case anything happens to me. I find it difficult for the simple fact that I can see through the eyes of all of these people. I can see the triangulation. There are so many elements involved that make this sound outlandish at best.  I don't blame anyone involved. This isn't about Ego. Or revenge. I'm not vindictive. I don't want anything negative to happen to anyone. I simply can't be quiet anymore.
 
+
 If anything I'm grateful for many of them as they've helped me in many ways they never intended to. This entire situation has. 
 
 God meant it for Good.
+
+
+-----
+
+Edit 09/07/2026
+
+I've realized that I can't really post the things I want my daughter to see here because I fear that her mom will just get try to get ahead of it and attempt to discount whatever I may say before she even reads it.
