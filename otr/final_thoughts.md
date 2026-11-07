@@ -1,4 +1,4 @@
-I won't bother with screenshots because the person who believed that they were necessary before no longer exists. But I have received renewed and sustained attention in the form of clones the past week. I am aware because I've checked the insights every single day for the past 16 months. I've been telling myself "if this goes flat completely I'll stop checking. It never did, though. There was always a blip or two...temporally consistent enough to keep going.
+I won't bother with screenshots because the person who believed that they were necessary before no longer exists. But I have received renewed and sustained attention in the form of clones the past week. I am aware because I've checked the insights every single day for the past 16 months. I've been telling myself "if this goes flat completely I'll stop checking." It never did, though. There was always a blip or two...temporally consistent enough to keep going.
 
 Probably just scrapers, right?
 
